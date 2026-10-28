@@ -1,0 +1,1 @@
+Keep a queue of films and series, light the one you are watching, and file a whole grade from 1 to 5. The log stays on this device, without an account.

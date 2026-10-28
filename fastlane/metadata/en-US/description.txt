@@ -1,0 +1,17 @@
+Sloglide is a private log for films and series. You keep a queue, mark the one you are watching, and file it when you finish, with a whole grade from 1 to 5. It is for someone who wants that record on this device, without an account.
+
+• Tonight is the home slot, labeled "Nothing showing" or "Now showing", with a "Finished" count, "Recent", and "Finish log".
+• "Stash" adds a title to the queue from search, from the shelf under "On this device", or with "Type a title".
+• "Light" puts one queued title on Tonight. "Dismiss" files that finish and opens "Grade".
+• Grades are whole numbers from 1 to 5. "Save" stores the grade. "Close" stores the grade that is showing. The line starts at 3.
+• "Queue" changes order with "Earlier" and "Later". While a title is showing, others sit under "Waiting" or "Also waiting". "Open queue" opens Queue.
+• "Discover" searches with "Search movies" or "Search series", chips "Movie" and "Series", and "More titles".
+• The shelf lists "Rashomon", "Spirited Away", "The Wire", "Paris, Texas", "Chungking Express", and "Portrait of a Lady on Fire".
+• "Finished" lists filed titles under "Latest" and "Earlier". "Saved grades" charts grades 1 through 5.
+• "Day marks" lists the day and the grade, with "Show this day" and "Showing this day".
+• "Undo last finish" returns only the latest finish to the front of the queue.
+• "Finishing" explains "Light, then dismiss." Profile and Settings include "Show intro", "Reset all data", and "Contact".
+
+Search needs a connection to look up movies and series. The on-device shelf and "Type a title" still work without one. The queue, the showing title, finishes, and grades stay on this device.
+
+Optional Game Center achievements mark your first film, 10, 50 and 100 films, your first series, and 10 saved grades. Open Profile to connect and view achievements. Your titles and individual grades stay on this device; only achievement progress is sent to Game Center. The diary works without Game Center.

@@ -1,0 +1,1 @@
+Simpan senarai tontonan filem dan siri, tayangkan tajuk yang sedang ditonton, kemudian rekod gred bulat dari 1 hingga 5. Log kekal pada peranti ini, tanpa akaun.

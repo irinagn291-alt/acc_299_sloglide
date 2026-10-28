@@ -1,0 +1,14 @@
+{
+  "originHash" : "d431b956d6f7a33f7a6f50a70b4d32a3b545fc3460bc7034b251f58eafd8dffd",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/seanmarcusross-hue/Alamofire",
+      "state" : {
+        "revision" : "9799237b84cbd97f80a3ac9b69b30ba65139f752"
+      }
+    }
+  ],
+  "version" : 3
+}

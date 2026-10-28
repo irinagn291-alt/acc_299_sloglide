@@ -1,0 +1,59 @@
+{
+  "bundleId": "com.repertory.marquee",
+  "achievements": [
+    {
+      "id": "com.repertory.marquee.achievement.first_film",
+      "referenceName": "First credits", "points": 10,
+      "image": "metadata/game_center/first_film.png",
+      "localizations": {
+        "en-US": {"name": "First credits", "beforeEarnedDescription": "Finish a film and save its grade.", "afterEarnedDescription": "You finished and graded your first film."},
+        "ms": {"name": "Kredit pertama", "beforeEarnedDescription": "Habiskan satu filem dan simpan penilaiannya.", "afterEarnedDescription": "Anda telah menghabiskan dan menilai filem pertama anda."}
+      }
+    },
+    {
+      "id": "com.repertory.marquee.achievement.ten_films",
+      "referenceName": "Ten films", "points": 20,
+      "image": "metadata/game_center/ten_films.png",
+      "localizations": {
+        "en-US": {"name": "Ten films", "beforeEarnedDescription": "Finish 10 films and save their grades.", "afterEarnedDescription": "You finished and graded 10 films."},
+        "ms": {"name": "Sepuluh filem", "beforeEarnedDescription": "Habiskan 10 filem dan simpan penilaiannya.", "afterEarnedDescription": "Anda telah menghabiskan dan menilai 10 filem."}
+      }
+    },
+    {
+      "id": "com.repertory.marquee.achievement.fifty_films",
+      "referenceName": "Fifty films", "points": 50,
+      "image": "metadata/game_center/fifty_films.png",
+      "localizations": {
+        "en-US": {"name": "Fifty films", "beforeEarnedDescription": "Finish 50 films and save their grades.", "afterEarnedDescription": "You finished and graded 50 films."},
+        "ms": {"name": "Lima puluh filem", "beforeEarnedDescription": "Habiskan 50 filem dan simpan penilaiannya.", "afterEarnedDescription": "Anda telah menghabiskan dan menilai 50 filem."}
+      }
+    },
+    {
+      "id": "com.repertory.marquee.achievement.hundred_films",
+      "referenceName": "A hundred films", "points": 100,
+      "image": "metadata/game_center/hundred_films.png",
+      "localizations": {
+        "en-US": {"name": "A hundred films", "beforeEarnedDescription": "Finish 100 films and save their grades.", "afterEarnedDescription": "You finished and graded 100 films."},
+        "ms": {"name": "Seratus filem", "beforeEarnedDescription": "Habiskan 100 filem dan simpan penilaiannya.", "afterEarnedDescription": "Anda telah menghabiskan dan menilai 100 filem."}
+      }
+    },
+    {
+      "id": "com.repertory.marquee.achievement.first_series",
+      "referenceName": "Series finale", "points": 10,
+      "image": "metadata/game_center/first_series.png",
+      "localizations": {
+        "en-US": {"name": "Series finale", "beforeEarnedDescription": "Finish a series and save its grade.", "afterEarnedDescription": "You finished and graded your first series."},
+        "ms": {"name": "Penamat siri", "beforeEarnedDescription": "Habiskan satu siri dan simpan penilaiannya.", "afterEarnedDescription": "Anda telah menghabiskan dan menilai siri pertama anda."}
+      }
+    },
+    {
+      "id": "com.repertory.marquee.achievement.ten_grades",
+      "referenceName": "Ten verdicts", "points": 20,
+      "image": "metadata/game_center/ten_grades.png",
+      "localizations": {
+        "en-US": {"name": "Ten verdicts", "beforeEarnedDescription": "Save grades for 10 finished films or series.", "afterEarnedDescription": "You saved grades for 10 finished titles."},
+        "ms": {"name": "Sepuluh penilaian", "beforeEarnedDescription": "Simpan penilaian untuk 10 filem atau siri yang telah tamat.", "afterEarnedDescription": "Anda telah menyimpan penilaian untuk 10 tajuk yang telah tamat."}
+      }
+    }
+  ]
+}

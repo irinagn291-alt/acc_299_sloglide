@@ -1,0 +1,17 @@
+Sloglide ialah log peribadi untuk filem dan siri. Simpan senarai tontonan, tandakan tajuk yang sedang ditonton, kemudian rekodkannya selepas selesai dengan gred bulat dari 1 hingga 5. Sesuai untuk anda yang mahu rekod itu kekal pada peranti ini, tanpa akaun.
+
+• Malam ini ialah ruang utama, berlabel “Tiada tayangan” atau “Sedang ditayangkan”, dengan kiraan “Selesai”, “Terkini” dan “Log tontonan selesai”.
+• “Simpan” menambah tajuk ke senarai tontonan melalui carian, rak di bawah “Pada peranti ini” atau “Taip tajuk”.
+• “Tayangkan” meletakkan satu tajuk dalam senarai pada Malam ini. “Selesai” merekodkan tontonan itu dan membuka “Gred”.
+• Gred ialah nombor bulat dari 1 hingga 5. “Simpan” menyimpan gred. “Tutup” menyimpan gred yang dipaparkan. Nilai awal ialah 3.
+• “Senarai tontonan” mengubah susunan dengan “Awalkan” dan “Kemudiankan”. Semasa tajuk sedang ditayangkan, tajuk lain berada di bawah “Menunggu” atau “Turut menunggu”. “Buka senarai tontonan” membuka Senarai tontonan.
+• “Teroka” mencari melalui “Cari filem” atau “Cari siri”, pilihan “Filem” dan “Siri”, serta “Lagi tajuk”.
+• Rak ini menyenaraikan “Rashomon”, “Spirited Away”, “The Wire”, “Paris, Texas”, “Chungking Express” dan “Portrait of a Lady on Fire”.
+• “Selesai” menyenaraikan tajuk yang direkodkan di bawah “Terkini” dan “Terdahulu”. “Gred disimpan” memaparkan carta gred 1 hingga 5.
+• “Tanda harian” menyenaraikan hari dan gred, dengan “Tunjuk hari ini” dan “Sedang ditayangkan hari ini”.
+• “Buat asal tontonan terakhir” mengembalikan hanya tontonan terbaharu ke hadapan senarai.
+• “Proses menonton selesai” menerangkan “Tayangkan, kemudian selesai.” Profil dan Tetapan merangkumi “Tunjuk pengenalan”, “Tetapkan semula semua data” dan “Hubungi”.
+
+Carian memerlukan sambungan untuk mencari filem dan siri. Rak pada peranti dan “Taip tajuk” tetap boleh digunakan tanpa sambungan. Senarai tontonan, tajuk yang sedang ditayangkan, rekod tontonan selesai dan gred kekal pada peranti ini.
+
+Pencapaian Game Center pilihan menandakan filem pertama, 10, 50 dan 100 filem, siri pertama serta 10 penilaian yang disimpan. Buka Profil untuk menyambung dan melihat pencapaian. Tajuk dan gred individu kekal pada peranti ini; hanya kemajuan pencapaian dihantar ke Game Center. Log boleh digunakan tanpa Game Center.
